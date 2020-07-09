@@ -7,6 +7,7 @@ public class Cliente {
 	private String fone;
 	private String cpf;
 	private float limite;
+	
 	public int getCodigo() {
 		return codigo;
 	}
