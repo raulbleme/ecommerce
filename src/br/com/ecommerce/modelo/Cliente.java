@@ -8,6 +8,39 @@ public class Cliente {
 	private String cpf;
 	private float limite;
 	
+	//metodo construtor vazio
+	public Cliente() {
+		
+	}
+	
+	//metodo construtor com setters
+	public Cliente(int codigo, String nome, String email, String fone, String cpf, float limite) {
+		this.codigo = codigo;
+		this.nome = nome;
+		this.email = email;
+		this.fone = fone;
+		this.cpf = cpf;
+		this.limite = limite;
+	}
+	
+	public void setAll(int codigo, String nome, String email, String fone, String cpf, float limite) {
+		this.codigo = codigo;
+		this.nome = nome;
+		this.email = email;
+		this.fone = fone;
+		this.cpf = cpf;
+		this.limite = limite;
+	}
+	
+	public String getAll() {
+		return "Codigo: " + codigo + "\n" +
+			"Nome: " + nome + "\n" +
+			"e-mail: " + email + "\n" + 
+			"Telefone: " + fone + "\n" + 
+			"CPF: " + cpf + "\n" + 
+			"Limite: " + limite;
+	}
+	
 	public int getCodigo() {
 		return codigo;
 	}
